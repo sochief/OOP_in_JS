@@ -8,6 +8,8 @@ function retirement(retirementAge) {
     };
 }
 var retirementUS = retirement(66);
-retirement(1990);
-
-retirement(66)(1990);
+var retirementGermany = retirement(65);
+var retirementIceLand = retirement(67);
+retirementGermany(1990);
+retirementUS(1990);
+retirementIceLand(1990);
