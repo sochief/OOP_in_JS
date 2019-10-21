@@ -1,7 +1,7 @@
 var years = [1990, 1965, 1937, 2005, 1998];
 function arrayCalc(arr, fn) {
     var arrRes = [];
-    for (var i = 0; arr, length; i++) {
+    for (var i = 0; i < arr.length; i++) {
         arrRes.push(fn(arr[i]));
     }
     return arrRes;
@@ -14,3 +14,5 @@ function isFullAge(limit, el) {
 }
 var ages = arrayCalc(years, calculateAge);
 var fullJapan = arrayCalc(ages, isFullAge.bind(this, 20));
+console.log(fullJapan);
+console.log(ages);
