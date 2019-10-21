@@ -43,3 +43,10 @@ john.presentation.call(emily, 'friendly', 'afternoon');
 // call method makes us apply method for the other objects
 // there is a similar method called apply, where we pass arguments to the function  as an array
 // Bind method , makes a copy of a function, and doesnt call a function  itself
+var johnFriendly = john.presentation.bind(john, 'friendly'); // it will return a function, which will be stored in jophnFrindly variable, thats why we pass only one argument
+
+johnFriendly('morning');
+johnFriendly('night');
+
+var emilyFormal = john.presentation.bind(emily, 'formal');
+emilyFormal('afternoon');
