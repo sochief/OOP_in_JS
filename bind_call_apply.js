@@ -7,15 +7,8 @@ var john = {
     presentation: function(style, timeOfDay) {
         if (style === 'formal') {
             console.log(
-                'Good ' +
-                    timeOfDay +
-                    ", Ladies and gentelmen I'm " +
-                    this.name +
-                    " , I'm " +
-                    this.job +
-                    " and I'm " +
-                    this.age +
-                    ' years old.'
+                'Good ' + timeOfDay + ", Ladies and gentelmen I'm " + this.name +
+                    " , I'm " + this.job + " and I'm " + this.age + ' years old.'
             );
         } else if (style === 'friendly') {
             console.log(
